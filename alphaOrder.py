@@ -10,9 +10,9 @@ if len(s) == 1:
 for i in range(len(s)-1):
     if s[i] < s[i+1]:
         long += s[i]
-        longest = long
         if i == len(s) - 2:
             long += s[i+1]
+            longest = long
     else:
         long += s[i]
         if len(long)> len(longest):
